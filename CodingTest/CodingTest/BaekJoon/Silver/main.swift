@@ -1,44 +1,27 @@
 //
-//  1874.swift
-//  스택 수열
+//  2960.swift
+//  에라토스테네스의 체
 //
-//  Created by SeokHyun on 2023/06/29.
+//  Created by SeokHyun on 2023/07/01.
 //
 
 import Foundation
 
-let count = Int(readLine()!)!
-var inputs = [Int]()
-var result = [String]()
-_ = (0..<count).map{ _ in inputs.append(Int(readLine()!)!) }
+let input = readLine()!.split{$0==" "}.map{Int(String($0))!}
+let n = input[0]
+let k = input[1]
+var isVisited = Array(repeating: false, count: n+1)
+var count = 0
 
-var stack = [Int]()
-
-var max = 0
-
-for input in inputs {
-  if max < input {
-    for i in max+1...input {
-      stack.append(i)
-      result.append("+")
+for i in 2...n {
+  for j in stride(from: i, through: n, by: i) {
+    if isVisited[j] { continue } // 방문 했으면 다음으로 넘어감
+    isVisited[j] = true // 방문 처리
+    count += 1
+    
+    if count == k {
+      print(j)
+      exit(0)
     }
-    max = input // max 갱신
-    _ = stack.popLast()
-    result.append("-")
-  } else if max == input {
-    _ = stack.popLast()
-    result.append("-")
-  } else { // max > input
-    if input != stack.last! { // input과 stackLast가 같아야 pop하는데, 서로 다르다면 실패!
-      break
-    }
-    _ = stack.popLast()
-    result.append("-")
   }
-}
-
-if stack.isEmpty {
-  print(result.joined(separator: "\n"))
-} else {
-  print("NO")
 }
