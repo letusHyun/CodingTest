@@ -48,6 +48,9 @@
 		13A754342A4B2426009CAF77 /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
 		13C07ECE2A1517CF005F04CD /* 4101.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4101.swift; sourceTree = "<group>"; };
 		13CB6D2D2A1D311900D185B2 /* 예제4-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "예제4-1.swift"; sourceTree = "<group>"; };
+		13FE646F2A5BF43D007D9A53 /* 1094_bitmask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094_bitmask.swift; sourceTree = "<group>"; };
+		13FE64732A5C0F35007D9A53 /* 1094_greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094_greedy.swift; sourceTree = "<group>"; };
+		13FE647A2A5E9FA1007D9A53 /* 1740.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1740.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +86,15 @@
 			path = Bronze;
 			sourceTree = "<group>";
 		};
-		133A004C2A0160E500B6338E /* BaekJoon */ = {
+		133A004C2A0160E500B6338E /* BOJ */ = {
 			isa = PBXGroup;
 			children = (
+				13FE646D2A5B0306007D9A53 /* Category */,
 				138C2DB52A2A1F9000F5FB40 /* Silver */,
 				132550882A13CAFD00094218 /* Bronze */,
 				13254FE02A04384500094218 /* Greedy */,
 			);
-			path = BaekJoon;
+			path = BOJ;
 			sourceTree = "<group>";
 		};
 		1344714229E460F30036ED32 = {
@@ -112,7 +116,7 @@
 		1344714D29E460F30036ED32 /* CodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				133A004C2A0160E500B6338E /* BaekJoon */,
+				133A004C2A0160E500B6338E /* BOJ */,
 				1344715529E671AD0036ED32 /* ECoTe */,
 			);
 			path = CodingTest;
@@ -150,6 +154,32 @@
 				13274C2E2A57F439001F141C /* 11866.swift */,
 			);
 			path = Silver;
+			sourceTree = "<group>";
+		};
+		13FE646D2A5B0306007D9A53 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				13FE64722A5C0F21007D9A53 /* Greedy */,
+				13FE646E2A5B030B007D9A53 /* BitMasking */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		13FE646E2A5B030B007D9A53 /* BitMasking */ = {
+			isa = PBXGroup;
+			children = (
+				13FE646F2A5BF43D007D9A53 /* 1094_bitmask.swift */,
+				13FE647A2A5E9FA1007D9A53 /* 1740.swift */,
+			);
+			path = BitMasking;
+			sourceTree = "<group>";
+		};
+		13FE64722A5C0F21007D9A53 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				13FE64732A5C0F35007D9A53 /* 1094_greedy.swift */,
+			);
+			path = Greedy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
