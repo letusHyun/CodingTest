@@ -51,6 +51,7 @@
 		13FE646F2A5BF43D007D9A53 /* 1094_bitmask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094_bitmask.swift; sourceTree = "<group>"; };
 		13FE64732A5C0F35007D9A53 /* 1094_greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094_greedy.swift; sourceTree = "<group>"; };
 		13FE647A2A5E9FA1007D9A53 /* 1740.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1740.swift; sourceTree = "<group>"; };
+		13FE647C2A5F0ECC007D9A53 /* 17419.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17419.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +171,7 @@
 			children = (
 				13FE646F2A5BF43D007D9A53 /* 1094_bitmask.swift */,
 				13FE647A2A5E9FA1007D9A53 /* 1740.swift */,
+				13FE647C2A5F0ECC007D9A53 /* 17419.swift */,
 			);
 			path = BitMasking;
 			sourceTree = "<group>";
