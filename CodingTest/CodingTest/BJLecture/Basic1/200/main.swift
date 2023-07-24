@@ -1,22 +1,49 @@
 //
-//  9093.swift
-//  단어 뒤집기
+//  1158.swift
+//  CodingTest
 //
-//  Created by SeokHyun on 2023/07/21.
+//  요세푸스문제
 //
 
 import Foundation
 
-var count = Int(readLine()!)!
-
-while count > 0 {
-  let arr = readLine()!.split{$0==" "}.map{String($0)}
-  var result = [String]()
-  for word in arr {
-    result.append(String(word.reversed()))
+struct Queue<T> {
+  private var queue = [T]()
+  private var head = 0
+  var count: Int {
+    queue.count - head
   }
-  for word in result {
-    print(word, terminator: " ")
+  var isEmpty: Bool {
+    count <= 0 ? true : false
   }
-  count -= 1
+  
+  mutating func enqueue(_ element: T) {
+    queue.append(element)
+  }
+  
+  mutating func dequeue() -> T? {
+    if isEmpty { return nil }
+    
+    let element = queue[head]
+    head += 1
+    
+    return element
+  }
 }
+
+let input = readLine()!.split{$0==" "}.map{Int(String($0))!}
+let n = input[0]
+let k = input[1]
+var queue = Queue<Int>()
+_ = (1...n).map{ queue.enqueue($0) }
+
+var result = [Int]()
+
+while !queue.isEmpty {
+  for _ in 0..<k-1 {
+    queue.enqueue(queue.dequeue()!)
+  }
+  result.append(queue.dequeue()!)
+}
+
+print("<" + result.map{String($0)}.joined(separator: ", ") + ">")
