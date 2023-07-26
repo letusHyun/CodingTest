@@ -6,10 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		130B9B2B2A6EF5A40072A0CF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B9B2A2A6EF5A40072A0CF /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		1344714929E460F30036ED32 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -34,7 +30,7 @@
 		130B9AFD2A6AD6F20072A0CF /* 9012_괄호_백준풀이.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9012_괄호_백준풀이.swift"; sourceTree = "<group>"; };
 		130B9AFF2A6ADFD00072A0CF /* 1874_스택수열.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1874_스택수열.swift"; sourceTree = "<group>"; };
 		130B9B032A6BC2450072A0CF /* 1406_에디터_백준풀이.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1406_에디터_백준풀이.swift"; sourceTree = "<group>"; };
-		130B9B2A2A6EF5A40072A0CF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		130B9B2A2A6EF5A40072A0CF /* 1158_요세푸스문제.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1158_요세푸스문제.swift"; sourceTree = "<group>"; };
 		130FA9462A445EC500E739C5 /* 예제4-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "예제4-2.swift"; sourceTree = "<group>"; };
 		130FA9492A44854500E739C5 /* 실전문제2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "실전문제2.swift"; sourceTree = "<group>"; };
 		130FA94B2A44FB0000E739C5 /* 실전문제3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "실전문제3.swift"; sourceTree = "<group>"; };
@@ -59,6 +55,7 @@
 		1344714B29E460F30036ED32 /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1344714E29E460F30036ED32 /* Part2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part2_2.swift; sourceTree = "<group>"; };
 		1344715629E671DA0036ED32 /* Part2_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part2_3.swift; sourceTree = "<group>"; };
+		1377640B2A71654400B11A15 /* 17413_단어뒤집기2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "17413_단어뒤집기2.swift"; sourceTree = "<group>"; };
 		138C2DB62A2A1F9B00F5FB40 /* 1181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1181.swift; sourceTree = "<group>"; };
 		13A754342A4B2426009CAF77 /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
 		13C07ECE2A1517CF005F04CD /* 4101.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4101.swift; sourceTree = "<group>"; };
@@ -117,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				130B9AF72A6A959A0072A0CF /* 200 */,
+				1377640A2A71652F00B11A15 /* 201 */,
 			);
 			path = Basic1;
 			sourceTree = "<group>";
@@ -129,7 +127,7 @@
 				130B9AFD2A6AD6F20072A0CF /* 9012_괄호_백준풀이.swift */,
 				130B9AFF2A6ADFD00072A0CF /* 1874_스택수열.swift */,
 				130B9B032A6BC2450072A0CF /* 1406_에디터_백준풀이.swift */,
-				130B9B2A2A6EF5A40072A0CF /* main.swift */,
+				130B9B2A2A6EF5A40072A0CF /* 1158_요세푸스문제.swift */,
 			);
 			path = 200;
 			sourceTree = "<group>";
@@ -205,6 +203,14 @@
 				131CB3F12A4737A40061F97F /* 실전문제4.swift */,
 			);
 			path = ECoTe;
+			sourceTree = "<group>";
+		};
+		1377640A2A71652F00B11A15 /* 201 */ = {
+			isa = PBXGroup;
+			children = (
+				1377640B2A71654400B11A15 /* 17413_단어뒤집기2.swift */,
+			);
+			path = 201;
 			sourceTree = "<group>";
 		};
 		138C2DB52A2A1F9000F5FB40 /* Silver */ = {
@@ -317,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130B9B2B2A6EF5A40072A0CF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
