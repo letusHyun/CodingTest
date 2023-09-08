@@ -8,8 +8,8 @@
 let n = Int(readLine()!)!
 let arr = readLine()!.split{$0==" "}.map{Int(String($0))!}
 let reversedArr: [Int] = arr.reversed()
-var rd = Array(repeating: 1, count: n) // LIS 가장긴증가하는부분수열
-var ld = Array(repeating: 1, count: n) // LDS 가장기감소하는부분수열
+var rd = Array(repeating: 1, count: n) // LIS 가장긴증가하는부분수열 (왼쪽에서 오른쪽 순)
+var ld = Array(repeating: 1, count: n) // LDS 가장기감소하는부분수열 (오른쪽에서 왼쪽 순)
 var d = Array(repeating: 0, count: n) // rd + ld
 // 증가
 for i in 1..<n {
